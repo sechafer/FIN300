@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Chacón - Introduction & Financial Analysis</title>
+    <style>
+        .post-container {
+            max-width: 700px;
+            margin: 20px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .inner-container {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 35px;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-photo:hover {
+            transform: scale(1.05);
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .intro-section {
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .location-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        
+        .flag {
+            font-size: 20px;
+            margin: 0 5px;
+        }
+        
+        .intro-text {
+            font-size: 16px;
+            color: #444;
+            text-align: justify;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        
+        .news-section {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 5px solid #f39c12;
+        }
+        
+        .news-link {
+            background: #2c3e50;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3);
+        }
+        
+        .news-link:hover {
+            background: #34495e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 62, 80, 0.4);
+        }
+        
+        .analysis-box {
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+            border: 1px solid #81c784;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .analysis-title {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        
+        .prevention-list {
+            color: #2e7d32;
+            font-size: 15px;
+        }
+        
+        .prevention-list li {
+            margin-bottom: 8px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .prevention-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .closing {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f1f3f4 0%, #e8eaf6 100%);
+            border-radius: 12px;
+            color: #5f6368;
+            font-style: italic;
+        }
+        
+        .emoji {
+            font-size: 18px;
+            margin: 0 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .post-container {
+                margin: 10px;
+            }
+            
+            .inner-container {
+                padding: 25px;
+            }
+            
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .name {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="inner-container">
+            <div class="header">
+                <img src="./samuel.jpeg" alt="Samuel Chacon" class="profile-photo" />
+                <div class="name">Samuel Chacón</div>
+                <div class="title">Electrical Engineer & Technology Entrepreneur</div>
+            </div>
+            
+            <div class="intro-section">
+                <div class="section-title">
+                    <span class="emoji">👋</span> Introduction
+                </div>
+                <div class="intro-text">
+                    Hello everyone! My name is <span class="highlight">Samuel Chacón</span>, and I am originally from <span class="flag">🇻🇪</span> Venezuela but currently reside in <span class="location-badge">São Bernardo do Campo, São Paulo, Brazil <span class="flag">🇧🇷</span></span>
+                    <br><br>
+                    I am an electrical engineer and software development professional who owns a technology consulting company. Currently, I provide <span class="highlight">email marketing support for Sky Brasil</span>, a major telecommunications company. Something interesting about me: I have been <span class="highlight">married for 15 years</span>, and my wife is also studying at BYU! By God's grace, we will both complete all our coursework this December 2025.
+                    <br><br>
+                    Living in Brazil as a Venezuelan has given me a unique perspective on <span class="highlight">economic resilience and financial planning</span> - experiences that have shaped my understanding of business sustainability and the critical importance of sound financial management.
+                </div>
+            </div>
+            
+            <div class="news-section">
+                <div class="section-title">
+                    <span class="emoji">📰</span> Financial Failure Case Study
+                </div>
+                <p><strong>Company:</strong> FTX Cryptocurrency Exchange</p>
+                
+                <a href="https://www.reuters.com/markets/currencies/how-ftxs-collapse-unfolded-2022-11-10/" 
+                   class="news-link" target="_blank">
+                    📖 Read the Full Story: Reuters - How FTX's Collapse Unfolded
+                </a>
+                
+                <p>FTX, once valued at $32 billion, collapsed in November 2022 due to liquidity crisis and alleged misuse of customer funds. The exchange filed for bankruptcy after it was revealed that billions in customer deposits were allegedly used to cover losses at Alameda Research, a trading firm also owned by Sam Bankman-Fried.</p>
+                
+                <div class="analysis-box">
+                    <div class="analysis-title">🛡️ What FTX Could Have Done to Prevent Failure:</div>
+                    <ul class="prevention-list">
+                        <li><strong>Proper Fund Segregation:</strong> Maintained strict separation between customer deposits and company operational funds</li>
+                        <li><strong>Independent Auditing:</strong> Implemented regular third-party audits with transparent financial reporting</li>
+                        <li><strong>Regulatory Compliance:</strong> Adhered to established financial regulations and obtained proper licenses</li>
+                        <li><strong>Risk Management:</strong> Established clear risk limits and avoided using customer funds for high-risk trading</li>
+                        <li><strong>Corporate Governance:</strong> Created independent board oversight and eliminated conflicts of interest</li>
+                        <li><strong>Liquidity Management:</strong> Maintained adequate reserves to handle customer withdrawals during market stress</li>
+                        <li><strong>Transparency:</strong> Provided regular proof-of-reserves and clear communication about fund usage</li>
+                    </ul>
+                </div>
+                
+                <p>As someone working in the technology sector, I believe this case demonstrates that <span class="highlight">innovative technology means nothing without fundamental financial integrity and proper governance structures</span>. The FTX collapse affected millions of users worldwide and highlighted the critical importance of trustworthy financial management in any business.</p>
+            </div>
+            
+            <div class="closing">
+                <span class="emoji">🚀</span> I'm excited to learn with all of you and explore how proper financial management can build sustainable businesses!<br>
+                Looking forward to engaging discussions throughout this course! <span class="emoji">📚</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
